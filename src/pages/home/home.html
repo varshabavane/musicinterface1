@@ -1,5 +1,5 @@
 <ion-header>
-  <progrss-bar [progress]="currentTrack.progress"></progrss-bar>
+  <progress-bar [progress]="currentTrack.progress"></progress-bar>
 </ion-header>
 
 <ion-content full-screen>
@@ -15,7 +15,7 @@
       <button detail-none  ion-item *ngFor='let track of tracks ; let i =index' (click)="track.playing ? pauseTrack(track):playTrack(track)" [ngClass]="{alternate:i%2, 'playing':trackPalying}">
 
           <ion-avatar item-left>
-              <img [src]="'https://api.adorable.io/avatars/75/' + track.artist">
+              <img [src]="'assets/imgs/deepika.jpg' + track.artist">
               <ion-spinner item-right *ngIf="track.playing" name="bubbles" item-left></ion-spinner>
           </ion-avatar>
           <h2>{{track.artist}}</h2>
