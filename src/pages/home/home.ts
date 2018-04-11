@@ -13,12 +13,24 @@ export class HomePage {
 
   constructor(public navCtrl: NavController) {
     this.tracks = [
-      { title: "hi", artist: "odesza", playing: false, progress: 0 },
-      { title: "hello", artist: "abcd", playing: false, progress: 0 },
+      { title: "main rang sharbatonka", artist: "shahid", playing: 'assets\songs\ppnh.mp3', progress: 0 },
+      { title: "phone me teri photo", artist: "neha kakkar", playing:'assets\songs\Pmtp.mp3' , progress: 0 },
       {
-        title: "HyperParadise",
-        artist: "Hermitude",
-        playing: false,
+        title: "dhaga dhaga",
+        artist: "pooja sawant",
+        playing:'assets\songs\dhagadhaga.mp3',
+        progress: 0
+      },
+      {
+        title: "Tere sang yara",
+        artist: "akshay",
+        playing:'assets\songs\tere sang Yaara.mp3',
+        progress: 0
+      },
+      {
+        title: "rain Mashup",
+        artist: "neha kakar",
+        playing:'assets\songs\rainMashup.mp3',
         progress: 0
       }
     ];
