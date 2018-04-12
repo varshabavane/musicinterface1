@@ -15,7 +15,7 @@
       <button detail-none  ion-item *ngFor='let track of tracks ; let i =index' (click)="track.playing ? pauseTrack(track):playTrack(track)" [ngClass]="{alternate:i%2, 'playing':trackPalying}">
 
           <ion-avatar item-left>
-              <img [src]="'assets/imgs/deepika.jpg' + track.artist">
+              <img [src]="track.img">
               <ion-spinner item-right *ngIf="track.playing" name="bubbles" item-left></ion-spinner>
           </ion-avatar>
           <h2>{{track.artist}}</h2>
